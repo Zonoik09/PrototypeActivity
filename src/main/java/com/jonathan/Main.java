@@ -93,21 +93,17 @@ public class Main {
             compare(i, llista.get(i), llistaCopy.get(i));
         }
 
-        System.out.println("Comparar amb la llista clonada però invertida:");
-        for (int i = 0; i < llista.size(); i++) {
-            compare(i, llista.get(i), llistaCopy.get(llista.size() - i - 1));
-        }
     }
 
     static void compare (int i, Electrodomestic a, Electrodomestic b) {
         if (a == b) {
-            System.out.println(i + ": Els poligons són el mateix objecte");
+            System.out.println(i + ": són el mateix objecte");
         } else {
-            System.out.print(i + ": Els poligons són objectes diferents - ");
+            System.out.print(i + ": són objectes diferents - ");
             if (a.equals(b)) {
-                System.out.println(i + ": Els poligons són idèntics");
+                System.out.println(i + ": són idèntics");
             } else {
-                System.out.println(i + ": Els poligons NO són identics");
+                System.out.println(i + ": NO són identics");
             }
         }
     }
